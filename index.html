@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="resources/css/style.css" type="text/css" />
+    <title>HTML Cheatsheet</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Cheatsheet</h1>
+      <nav class="top-nav">
+        <ul>
+          <li><a href="#tables">Tables</a></li>
+          <li><a href="#input">Input</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h2 id="tables">Tables</h2>
+
+        <h3>Table Tags</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Tag</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>&lt;table&gt;</code></td>
+              <td>Table</td>
+              <td>
+                Element that represents data with more than one dimension, in the form of a table.
+              </td>
+            </tr>
+            <tr>
+              <td><code>&lt;thead&gt;</code></td>
+              <td>Table Head (rows)</td>
+              <td>
+                Element that represents the block of rows that consist of the column labels
+                (headers) for the parent table element.
+              </td>
+            </tr>
+            <tr>
+              <td><code>&lt;th&gt;</code></td>
+              <td>Table Head (cell)</td>
+              <td>Element that represents a header cell in a table.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;tbody&gt;</code></td>
+              <td>Table Body</td>
+              <td>
+                Element that represents a block of rows that consist of a body of data for the
+                parent table element.
+              </td>
+            </tr>
+            <tr>
+              <td><code>&lt;tr&gt;</code></td>
+              <td>Table Row</td>
+              <td>Element that represents a row of cells in a table.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;td&gt;</code></td>
+              <td>Table Data</td>
+              <td>Element that represents a data cell in a table.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;tfoot&gt;</code></td>
+              <td>Table Foot</td>
+              <td>
+                Element that represents the block of rows that consist of the column summaries
+                (footers) for the parent table element.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Table Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>&lt;colspan&gt;</code></td>
+              <td>Column Span</td>
+              <td>Defines how many columns a td or th element should span.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;rowspan&gt;</code></td>
+              <td>Row Span</td>
+              <td>Defines how many rows a td or th element should span.</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article>
+        <h2 id="input">Input</h2>
+
+        <h3>Main Input Types</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>button</code></td>
+              <td>
+                A push button with no default behavior displaying the value of the value attribute,
+                empty by default.
+              </td>
+              <td>
+                <input type="button" value="Value attribute" />
+              </td>
+            </tr>
+            <tr>
+              <td><code>checkbox</code></td>
+              <td>A check box allowing single values to be selected/deselected.</td>
+              <td>
+                <input type="checkbox" id="checkbox-id" />
+                <label for="checkbox-id">Label</label>
+              </td>
+            </tr>
+            <tr>
+              <td><code>color</code></td>
+              <td>
+                A control for specifying a color; opening a color picker when active in supporting
+                browsers.
+              </td>
+              <td>
+                <input type="color" id="color-id" />
+                <label for="color-id">Label</label>
+              </td>
+            </tr>
+            <tr>
+              <td><code>date</code></td>
+              <td>A control for entering a date (year, month and day).</td>
+              <td>
+                <label for="date-id">Label:</label>
+                <br />
+                <input type="date" id="date-id" />
+              </td>
+            </tr>
+            <tr>
+              <td><code>file</code></td>
+              <td>A control that lets the user select a file.</td>
+              <td>
+                <label for="file-id">Label:</label>
+                <br />
+                <input type="file" id="file-id" />
+              </td>
+            </tr>
+            <tr>
+              <td><code>number</code></td>
+              <td>
+                A control for entering a number. Displays a spinner and adds default validation when
+                supported.
+              </td>
+              <td>
+                <label for="number-id">Label:</label>
+                <br />
+                <input type="number" id="number-id" />
+              </td>
+            </tr>
+            <tr>
+              <td><code>password</code></td>
+              <td>
+                A single-line text field whose value is obscured. Will alert user if site is not
+                secure.
+              </td>
+              <td>
+                <label for="password-id">Label:</label>
+                <br />
+                <input type="password" id="password-id" />
+              </td>
+            </tr>
+            <tr>
+              <td><code>radio</code></td>
+              <td>
+                A radio button, allowing a single value to be selected out of multiple choices with
+                the same name value.
+              </td>
+              <td>
+                <input type="radio" id="radio1-id" name="radio" value="yes" checked />
+                <label for="radio1-id">Label1</label>
+
+                <input type="radio" id="radio2-id" name="radio" value="no" />
+                <label for="radio2-id">Label2</label>
+              </td>
+            </tr>
+            <tr>
+              <td><code>range</code></td>
+              <td>A control for entering a number whose exact value is not important.</td>
+              <td>
+                <label for="range-id">Label1:</label>
+                <br />
+                <input type="range" id="range-id" />
+              </td>
+            </tr>
+            <tr>
+              <td><code>submit</code></td>
+              <td>A button that submits the form. Displays 'Submit' by default</td>
+              <td>
+                <input type="submit" />
+              </td>
+            </tr>
+            <tr>
+              <td><code>text</code></td>
+              <td>The default value. A single-line text field.</td>
+              <td>
+                <label for="text-id">Label1:</label>
+                <br />
+                <input type="text" id="text-id" placeholder="placeholder" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </main>
+
+    <footer>
+      <address id="contact">
+        Written by <a href="mailto:tiagofpbrandao@gmail.com">Tiago Brandao</a>.<br />
+        <a href="https://www.linkedin.com/in/engtiagobrandao/" target="_blank">My LinkedIn</a><br />
+      </address>
+    </footer>
+  </body>
+</html>
